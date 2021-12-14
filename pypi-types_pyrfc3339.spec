@@ -4,7 +4,7 @@
 #
 Name     : pypi-types_pyrfc3339
 Version  : 1.1.0
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/d6/bf/affa01633dc5de7dbad975c531439c80a2bfc4d9728bc596c59a380473d9/types-pyRFC3339-1.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/d6/bf/affa01633dc5de7dbad975c531439c80a2bfc4d9728bc596c59a380473d9/types-pyRFC3339-1.1.0.tar.gz
 Summary  : Typing stubs for pyRFC3339
