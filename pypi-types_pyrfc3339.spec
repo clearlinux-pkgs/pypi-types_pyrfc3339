@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-types_pyrfc3339
-Version  : 1.1.1.4
-Release  : 15
-URL      : https://files.pythonhosted.org/packages/e3/3a/6993937df80a015c9ac859f16061822d5a424731858fcfcd0211d2479bfe/types-pyRFC3339-1.1.1.4.tar.gz
-Source0  : https://files.pythonhosted.org/packages/e3/3a/6993937df80a015c9ac859f16061822d5a424731858fcfcd0211d2479bfe/types-pyRFC3339-1.1.1.4.tar.gz
+Version  : 1.1.1.5
+Release  : 16
+URL      : https://files.pythonhosted.org/packages/5c/db/c14e946671c08125bfc9a000732fb5645eb827ea6d0024a3934cda11c60d/types-pyRFC3339-1.1.1.5.tar.gz
+Source0  : https://files.pythonhosted.org/packages/5c/db/c14e946671c08125bfc9a000732fb5645eb827ea6d0024a3934cda11c60d/types-pyRFC3339-1.1.1.5.tar.gz
 Summary  : Typing stubs for pyRFC3339
 Group    : Development/Tools
 License  : Apache-2.0
@@ -41,10 +41,10 @@ python3 components for the pypi-types_pyrfc3339 package.
 
 
 %prep
-%setup -q -n types-pyRFC3339-1.1.1.4
-cd %{_builddir}/types-pyRFC3339-1.1.1.4
+%setup -q -n types-pyRFC3339-1.1.1.5
+cd %{_builddir}/types-pyRFC3339-1.1.1.5
 pushd ..
-cp -a types-pyRFC3339-1.1.1.4 buildavx2
+cp -a types-pyRFC3339-1.1.1.5 buildavx2
 popd
 
 %build
@@ -52,15 +52,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1679957206
+export SOURCE_DATE_EPOCH=1689879385
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
