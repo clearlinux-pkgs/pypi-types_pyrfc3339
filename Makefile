@@ -1,5 +1,5 @@
 PKG_NAME := pypi-types_pyrfc3339
-URL = https://files.pythonhosted.org/packages/5c/db/c14e946671c08125bfc9a000732fb5645eb827ea6d0024a3934cda11c60d/types-pyRFC3339-1.1.1.5.tar.gz
+URL = https://files.pythonhosted.org/packages/a9/04/40e8cd1e690f708c063bc28191fbd7fa868efa2d50fbd603b466ec509e81/types-pyRFC3339-2.0.1.20241107.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
